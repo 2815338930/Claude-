@@ -1,17 +1,38 @@
-anthropic.com
-clau.de
-claude.ai
-claude.com
-claudemcpclient.com
-claudemcpcontent.com
-claudeusercontent.com
-servd-anthropic-website.b-cdn.net
-sentry.io
-statsigapi.net
-cdn.anthropic.com
-mcp.anthropic.com
-console.anthropic.com
-workbench.anthropic.com
-anthropic.auth0.com
-anthropic-com.ghost.io
-anthropic.com.cdn.cloudflare.net
+
+# Claude / Anthropic - Loon
+# 策略组：全球手动策略
+
+# ===== 核心服务 =====
+DOMAIN-SUFFIX,anthropic.com,全球手动策略
+DOMAIN-SUFFIX,claude.ai,全球手动策略
+DOMAIN-SUFFIX,claude.com,全球手动策略
+DOMAIN-SUFFIX,clau.de,全球手动策略
+DOMAIN-SUFFIX,claudemcpclient.com,全球手动策略
+DOMAIN-SUFFIX,claudemcpcontent.com,全球手动策略
+DOMAIN-SUFFIX,claudeusercontent.com,全球手动策略
+
+# ===== CDN / 静态资源 =====
+DOMAIN,servd-anthropic-website.b-cdn.net,全球手动策略
+DOMAIN,anthropic.com.cdn.cloudflare.net,全球手动策略
+
+# ===== 认证 / 内容 =====
+DOMAIN,anthropic.auth0.com,全球手动策略
+DOMAIN,anthropic-com.ghost.io,全球手动策略
+
+# ===== 监控 / 遥测 =====
+DOMAIN-SUFFIX,sentry.io,全球手动策略
+DOMAIN-SUFFIX,statsigapi.net,全球手动策略
+DOMAIN,browser-intake-us5-datadoghq.com,全球手动策略
+DOMAIN-KEYWORD,datadog,全球手动策略
+DOMAIN-KEYWORD,sentry,全球手动策略
+DOMAIN-KEYWORD,sift,全球手动策略
+
+# ===== 第三方服务 =====
+DOMAIN-SUFFIX,intercom.io,全球手动策略
+DOMAIN-SUFFIX,intercomcdn.com,全球手动策略
+DOMAIN,cdn.usefathom.com,全球手动策略
+
+# ===== IPv4 / IPv6 / ASN =====
+IP-CIDR,160.79.104.0/21,全球手动策略,no-resolve
+IP-CIDR,2607:6bc0::/32,全球手动策略,no-resolve
+IP-ASN,399358,全球手动策略,no-resolve
